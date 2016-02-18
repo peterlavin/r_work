@@ -1,0 +1,67 @@
+
+---------------
+Ordinal Data:
+---------------
+
+An ordinal scale of measurement represents an ordered series of relationships or rank order. Examples are the results of a contest or be measurements taken (often in questionaire format) from participants in an activity. Examples of such activities are participating in a course, viewing a play or film or staying in a hotel, etc.
+
+Whereas this data is useful, it has some limitations, these are outlined here.
+
+These scales do not represent a measurable quantity. In the results of a contest, it is clear that first preformed better that all others, but does not tell by how much or how far first was ahead of second, third, etc. Further details of scores or other measurements are required for this.
+
+Course participants may be asked to rate their experience in terms of enjoyment, understanding of course material or benefit gained.
+
+Answers given are subjective. It is concievable that a person who thouroughly understood or enjoyed an activity my give a mid-scale answer, while a person with a mediocre experience of the same activity may rate that experience higher.
+
+Answering may also be subject to response biases. Examples of such biases are acquiescence bias and social desirability bias. In acquiesence bias, the respondant has a tendency to agree with all the questions or to indicate a positive connotation. The designer of the questions may decide to remove the possibility of giving a neutral answer (e.g. Neither agree not disagree).
+
+Social desirability bias is a tendancy to respond in a way which will be preceived as being socially acceptabel and or desirable. Surveys on sensitive areas like religion, bigitory, domestic violence, etc. may likely to be subject to this if questions are not properly structured.
+
+The question used to obtain the ordinal answers in this data can be termed a Likert scale. An typical Likert scale would be...
+
+ * Strongly disagree
+ * Disagree
+ * Neither agree nor disagree
+ * Agree
+ * Strongly Agree
+
+The data examined in this work are responses to questionaires which used a Likert scale. 
+
+
+http://docs.google.com/Doc?id=dg735wcb_18gfjp4ncn&invite=1063975185 
+
+
+Often five ordered response levels are used although seven or nine levels are also used.A recent empirical study[1] found that a 5- or 7- point scale may produce slightly higher mean scores relative to the highest possible attainable score, compared to those produced from a 10-point scale,
+
+
+1. Dawes, John (2008), "Do Data Characteristics Change According to the number of scale points used? An experiment using 5-point, 7-point and 10-point scales," International Journal of Market Research, 50 (1), 61-77.
+--------------------------------------
+--------------------------------------
+--------------------------------------
+Normality test on the projectmark variable.
+
+This data set consists of 14 data points. The (ranked) data set is as follows... [60 60 60 70 70 70 70 80 80 80 80 90 90 90]. When plotted (Figure XX) using a histogram, it resulted in a symmetric graph which somewhat resembled a normal curve. The plot of this data has a normal curve superimposed on it (although this curve does not extend to the tails of the plot). 
+
+Normality tests in general assume normality and are looking for evidence to reject that hypothesis. In general small sample sizes or sample where data point are not all unique are problematic for normality testing. With very small sample sizes, there needs to be strong evidence of a deviation from normality in order to get a low p-value. Samples of less than 15 or 20 may produce test results that will usually not reject the null.
+
+This data sets analysed here were not suitable for normality testing using the Anderson-Darling (AD) method as this test is only suitable for sample size over 25. The AD works well for sample sizes between 25 & 1000 data points[2].
+
+The Shapiro-Wilks test was use for this sample and calculated using the GNU software R. Using this software, using a sample size outside the range of 3 to 5000, an error is generated.
+
+[Results go here in a table]
+
+These results should not be used to state that your data are "normally distributed". The Shapiro-Wilk test provides evidence of certain types of "non-normality" and does not guarantee that data is normal.
+
+This data is not discrete, i.e. marks were not intentionally given in multiples of 10, but by using a continuous scale. It is interesting that although the data increments appear to have steps, the Shapiro-Wilk test did not indicate that the data was not normal.
+
+2. Minitab, (www.minitab.com).
+[end]
+
+---------------------------------------------------------------------------------------------
+http://www.jmp.com/support/faq/jmp2085.shtml
+How do I interpret the Shapiro-Wilk test for normality?
+
+The null hypothesis for this test is that the data are normally distributed.
+The Prob < W value listed in the output is the p-value. 
+
+If the chosen alpha level is 0.05 and the p-value is less than 0.05, then the null hypothesis that the data are normally distributed is rejected. If the p-value is greater than 0.05, then the null hypothesis cannot been rejected.

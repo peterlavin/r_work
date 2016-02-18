@@ -1,0 +1,14 @@
+incomplete_answer_count	 incorrect_answer_count	 future-elgrid	 prac-env-easy	 theory-comp-prac	 projectmark
+Mean	0.28	2.4				75
+Std Dev	0.88	6.57				10.92
+s^2	0.77	43.11				119.23
+Median	0	0				75
+Min	0	0				60
+Max	5	33				90
+Range	5	33				20
+Q1						70
+Q3						80
+IQR						10
+Mode						
+Bi-Modal			4 and 5	3 and 4	3 and 4	
+

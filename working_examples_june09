@@ -1,0 +1,51 @@
+
+
+
+barplot(d$future_elgrid, names.arg=sapply(d$legend, function(x) gsub("\\s", "\\\n", x)), main="Name of the Plot")
+
+
+
+barplot(d$future_elgrid, names.arg=sapply(d$legend, function(x) gsub("\\s", "\\\n", x)),las=2, main="Future elgrid Frequency", col=c("green"))
+
+
+
+hist(a$incomplete_answer_count, breaks=4, col="blue", main="Histogram of \nincomplete_answer_count", xlab="Incomplete Answer Count")
+
+
+hist(a$projectmark, breaks=c(40,50,60,70,80,90,100), col="blue", main="Histogram of \nincomplete_answer_count.", xlab="Incomplete Answer Count.")
+---------------------
+Fitted normal curve... (what worked)
+
+
+> h <- hist(p$projectmark, freq=FALSE, breaks=c(40,50,60,70,80,90,100), col="blue", main="Histogram of \nprojectmark.", xlab="Project Mark.")
+
+(and make sure to leave the plot open !!!)
+
+> xfit <- seq(min(p$projectmark), max(p$projectmark), length = (max(p$projectmark) - min(p$projectmark)))
+> yfit <- dnorm(xfit,mean=mean(p$projectmark),sd=sd(p$projectmark))
+> yfit <- yfit*diff(h$mids[1:2])*length(p$projectmark)
+> lines(xfit, yfit, col="red", lwd=2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
